@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Rock+3D&display=swap");
+
+@media screen and (max-width: 768px) {
+  main{
+    width: 300px
+  }
+  
+}
+$font-logo: "Rock 3D";
+$color-main: rgb(19, 5, 128);
+$color-text: rgb(73, 193, 232) ;
+$color-footer: rgb(243, 243, 165);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
