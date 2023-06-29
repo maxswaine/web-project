@@ -1,8 +1,16 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $color-background;
+
 }
 
 body{
@@ -10,15 +18,32 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.photo-right{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    flex-wrap: wrap-reverse;
+    text-align: center;
+    background-color: $color-background;
 }
 
-.photo-left{
+section {
     display: flex;
-    justify-content: flex-start;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $font-main;
+    width: 100%;
+  
+    .photo-right,
+    .photo-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px;
+    }
+  
+    .photo-right {
+      flex-direction: row-reverse;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
